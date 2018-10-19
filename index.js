@@ -19,7 +19,7 @@ console.log(nowServing([]))
 
 
 function currentLine(line){
-	array = []
+	let array = []
 	for (let i = 0; i<line.length; i++){
 	let number = i + 1
 	let updateLine = (` ${number}. ${line[i]}`)
