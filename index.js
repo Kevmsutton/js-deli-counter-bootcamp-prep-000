@@ -17,12 +17,18 @@ function nowServing(katzDeliLine){
 }
 console.log(nowServing([]))
 
+
 function currentLine(line){
-	let array = []
+	array = []
 	for (let i = 0; i<line.length; i++){
 	let number = i + 1
 	let updateLine = (` ${number}. ${line[i]}`)
 	array.push(updateLine)
 	}
+if (line.length > 0){
 	return (`The line is currently:${array.toString()}`)
+}
+else {
+	return "The line is currently empty."
+}
 }
